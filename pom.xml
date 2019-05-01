@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.cloudave.sample</groupId>
-	<artifactId>alicoud-demo</artifactId>
+	<artifactId>alicloud-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>alicoud-demo</name>
+	<name>alicloud-demo</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
