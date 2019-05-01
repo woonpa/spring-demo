@@ -1,0 +1,23 @@
+---
+spring:
+  profiles: alicloud
+  datasource:
+    tomcat:
+      initial-size: 50
+      max-active: 200
+    url:
+    username:
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+---
+spring:
+  profiles: local
+  datasource:
+    tomcat:
+      initial-size: 50
+      max-active: 200
+    url:
+    username:
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
