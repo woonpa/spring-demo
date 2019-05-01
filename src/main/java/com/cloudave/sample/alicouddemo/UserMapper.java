@@ -2,8 +2,13 @@ package com.cloudave.sample.alicouddemo;
 
 import org.apache.ibatis.annotations.*;
 
+import java.util.List;
+
 @Mapper
 public interface UserMapper {
+
+    @Select(value = "select * from user")
+    List<UserEntity> getAll();
 
     @Select(value = "select * from user where id=#{id}")
     UserEntity getOne(String id);

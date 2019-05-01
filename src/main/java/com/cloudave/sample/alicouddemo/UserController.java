@@ -5,12 +5,19 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequiredArgsConstructor
 @RequestMapping(value = "/api/v1/users")
 public class UserController {
 
     private final UserMapper userMapper;
+
+    @GetMapping
+    public List<UserEntity> getAll() {
+        return this.userMapper.getAll();
+    }
 
     @GetMapping(value = "/{id}")
     public UserEntity getOne(@PathVariable final String id) {
